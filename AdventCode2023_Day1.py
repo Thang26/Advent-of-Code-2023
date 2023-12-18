@@ -9,7 +9,7 @@ def main():
     with open("Day1_Puzzle.txt", "r") as file:
         file_list = file.readlines()
 
-        # Big loop to traverse thru document lines
+        # Big loop to traverse thru each document lines.
         for line in file_list:
 
             # Loop to go thru each char (left -> right) & find first num.
@@ -28,9 +28,10 @@ def main():
 
             sumList.append(((a*10) + b))
 
-            # At the end of everything, clear list for next iteration of line.
+            # At the end of everything, clear list for next iteration of document line.
             indvCharList.clear()
 
+        # Sum all our entries up together to get the total final answer.
         for numEntry in sumList:
             total += numEntry
 
