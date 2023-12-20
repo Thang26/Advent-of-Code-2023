@@ -1,6 +1,5 @@
 def main():
 
-    indvCharList = []
     sumList = []
     a = 0
     b = 0
@@ -27,9 +26,6 @@ def main():
                     break
 
             sumList.append(((a*10) + b))
-
-            # At the end of everything, clear list for next iteration of document line.
-            indvCharList.clear()
 
         # Sum all our entries up together to get the total final answer.
         for numEntry in sumList:
